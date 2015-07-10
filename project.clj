@@ -1,6 +1,6 @@
 (defproject clojurewerkz/vat "1.0.0-SNAPSHOT"
   :description "A tiny Clojure library that makes VAT calculation easier"
-  :dependencies [[org.clojure/clojure "1.5.1"]
+  :dependencies [[org.clojure/clojure "1.7.0"]
                  [clj-http "1.1.2"]
                  [cheshire "5.5.0"]]
   :profiles {:1.4 {:dependencies [[org.clojure/clojure "1.4.0"]]}
