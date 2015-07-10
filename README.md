@@ -30,7 +30,7 @@ definition to your `pom.xml`:
 
 With Leiningen:
 
-    [clojurewerkz/vat "1.0.0-beta1"]
+    [clojurewerkz/vat "1.0.0-beta2"]
 
 
 With Maven:
@@ -38,7 +38,7 @@ With Maven:
     <dependency>
       <groupId>clojurewerkz</groupId>
       <artifactId>vat</artifactId>
-      <version>1.0.0-beta1</version>
+      <version>1.0.0-beta2</version>
     </dependency>
 
 
