@@ -9,40 +9,38 @@
         data (json/decode (:body (http/get url {:apikey api-key})))]
     ))
 
-(defn ^:private get-eu-countries-iso-codes
-  "Returns the list of the EU countries ISO codes"
-  []
-  ["BE" ; Kingdom of Belgium
-   "BG" ; Republic of Bulgaria
-   "CZ" ; Czech Republic
-   "DK" ; Kingdom of Denmark
-   "DE" ; Federal Republic of Germany
-   "EE" ; Republic of Estonia
-   "IE" ; Ireland
-   "EL" ; Hellenic Republic
-   "ES" ; Kingdom of Spain
-   "FR" ; French Republic
-   "HR" ; Republic of Croatia
-   "IT" ; Italian Republic
-   "CY" ; Republic of Cyprus
-   "LV" ; Republic of Latvia
-   "LT" ; Republic of Lithuania
-   "LU" ; Grand Duchy of Luxembourg
-   "HU" ; Hungary
-   "MT" ; Republic of Malta
-   "NL" ; Kingdom of the Netherlands
-   "AT" ; Republic of Austria
-   "PL" ; Republic of Poland
-   "PT" ; Portuguese Republic
-   "RO" ; Romania
-   "SI" ; Republic of Slovenia
-   "SK" ; Slovak Republic
-   "FI" ; Republic of Finland
-   "SE" ; Kingdom of Sweden
-   "UK" ; United Kingdom of Great Britain and Northern Ireland
-   ])
+(def eu-member-iso-codes
+  "List of the EU member ISO codes"
+  #{"BE"
+    "BG"
+    "CZ"
+    "DK"
+    "DE"
+    "EE"
+    "IE"
+    "EL"
+    "ES"
+    "FR"
+    "HR"
+    "IT"
+    "CY"
+    "LV"
+    "LT"
+    "LU"
+    "HU"
+    "MT"
+    "NL"
+    "AT"
+    "PL"
+    "PT"
+    "RO"
+    "SI"
+    "SK"
+    "FI"
+    "SE"
+    "UK"})
 
 (defn in-eu?
   "Check if country is in EU"
-  [^String country-iso-code]
-  (contains (get-eu-countries-iso-codes) country-iso-code))
+  [^String iso-code]
+  (not (not (eu-member-iso-codes iso-code))))
