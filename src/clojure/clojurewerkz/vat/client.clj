@@ -11,6 +11,7 @@
 
 (def eu-member-iso-codes
   "List of the EU member ISO codes"
+  ;; taken from http://publications.europa.eu/code/pdf/370000en.htm
   #{"BE"
     "BG"
     "CZ"
