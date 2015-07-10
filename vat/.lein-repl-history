@@ -1,0 +1,8 @@
+(require '[clojurewerkz.vat.core :as vat])
+vat
+(vat/get-vat-data)
+(vat/get-vat-data "mykey" "RU")
+exit
+(require '[clojurewerkz.vat.core :as vat])
+(vat/get-vat-data "mykey" "RU")
+exit
