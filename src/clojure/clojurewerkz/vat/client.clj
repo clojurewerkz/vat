@@ -2,7 +2,7 @@
   (:require [clj-http.client :as http]
             [cheshire.core :as json]))
 
-(defn get-vat-data
+#_ (defn get-vat-data
   ""
   [^String api-key ^String country-iso-code]
   (let [url "https://vatapi.com/v1/vat-rates"
