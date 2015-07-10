@@ -1,4 +1,4 @@
-(defproject clojurewerkz/vat "1.0.0-beta2-SNAPSHOT"
+(defproject clojurewerkz/vat "1.0.0-beta2"
   :description "A tiny Clojure library that makes VAT calculation easier"
   :license { :name "Eclipse Public License" }
   :min-lein-version "2.5.1"  
