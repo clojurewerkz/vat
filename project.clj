@@ -3,9 +3,8 @@
   :dependencies [[org.clojure/clojure "1.7.0"]
                  [clj-http "1.1.2"]
                  [cheshire "5.5.0"]]
-  :profiles {:1.4 {:dependencies [[org.clojure/clojure "1.4.0"]]}
-             :1.6 {:dependencies [[org.clojure/clojure "1.6.0-master-SNAPSHOT"]]}
-             :master {:dependencies [[org.clojure/clojure "1.6.0-master-SNAPSHOT"]]}
+  :profiles {:1.6 {:dependencies [[org.clojure/clojure "1.6.0"]]}
+             :master {:dependencies [[org.clojure/clojure "1.7.0-master-SNAPSHOT"]]}
              :dev {:resource-paths ["test/resources"]
                    :plugins [[codox "0.6.4"]]
                    :codox {:sources ["src/clojure"]
