@@ -1,6 +1,8 @@
 (ns clojurewerkz.vat.client-test
-  (:require [clojure.test :refer :all]
-            [clojurewerkz.vat.client :as vc]))
+  (:require [clojurewerkz.vat.client :as vc]
+            #+clj [clojure.test :refer :all]
+            #+cljs [cemerick.cljs.test :as t])
+  #+cljs (:require-macros [cemerick.cljs.test :refer (is are deftest testing)]))
 
 
 (deftest test-eu-membership

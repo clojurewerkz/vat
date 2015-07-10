@@ -1,13 +1,4 @@
-(ns clojurewerkz.vat.client
-  (:require [clj-http.client :as http]
-            [cheshire.core :as json]))
-
-#_ (defn get-vat-data
-  ""
-  [^String api-key ^String country-iso-code]
-  (let [url "https://vatapi.com/v1/vat-rates"
-        data (json/decode (:body (http/get url {:apikey api-key})))]
-    ))
+(ns clojurewerkz.vat.client)
 
 (def eu-member-iso-codes
   "List of the EU member ISO codes"
